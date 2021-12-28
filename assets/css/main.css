@@ -1,0 +1,169 @@
+/*
+Text: #264653
+Green: #2a9d8f
+Yellow: #e9c46a
+Organe: #f4a261
+More Orange: #e76f51
+
+*/
+
+img{
+	max-width: 100%;
+}
+
+#boton-pago{
+	background-color: yellow;
+}
+
+td{
+	border:1px solid black;
+}
+
+html{
+	font-family: 'Nunito', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #d500f9;
+}
+
+a:hover{
+	opacity:0.8;
+}
+
+
+table{
+	width: 100%;
+	border-spacing: 0;
+	 border-collapse: collapse;
+}
+
+table td, table th{
+	padding: 1em;
+	text-align: left;
+	border: none;
+}
+
+table tr:nth-child(even){
+	background-color: #f3e5f0;
+}
+
+.fa-star{
+	color: #ffc400;
+}
+
+h1,h2,h3{
+	text-transform: uppercase;
+}
+
+p{
+	line-height: 1.8em;
+	font-weight: 200;
+}
+
+@font-face{
+	font-family: nombrefuente;
+	src: url(archivofuente/font.woff)
+}
+
+
+.container{
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content{
+	max-width:960px;
+	max-height:500px;
+	width: 100%;
+	height: 80vh;
+	background-color: #fff;
+	box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.26);
+	border-radius: 4px;
+	position: relative;
+	padding: 1.8em;
+	overflow: scroll;
+}
+
+.actions {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.close {
+	width: 40px;
+	height: 40px;
+	color: white;
+	border-radius: 50%;
+	background-color: #642B73;
+	display: inline-block;
+	box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.26);
+	font-weight: 300;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+	
+.title-item{
+	border-bottom: solid 2px #c6426E;
+	padding: 1em;
+	font-size: 2em;
+}
+
+address{
+	font-weight: bold;
+	color: #642B73;
+	font-size: 1.3em;
+	display: inline-block;
+	margin-top: 2em;
+}
+
+.position{
+	background-color: #c6426E;
+	color:white;
+	padding: 0.5em;
+	border-radius: 4px;
+	margin-right: 0.5em;
+}
+
+.centrar{
+	text-align:center;
+}
+
+.main-image{
+	float: left;
+	margin-right: 1em;
+	width: 400px;
+}
+
+@media (max-width:600px) {
+	.content{
+		padding: 1em;
+	}
+	
+	td{
+		display: block;
+		width: 100%;
+	}
+	.td:nth-of-type(1){
+		font-size: 1.5em;
+		font-weight: bold;
+		color: #642B73;
+	}
+	
+	th{
+		display:none;
+	}
+}
+@media (min-height:500px) {
+	.content{
+		height: 500px;
+	}
+}
